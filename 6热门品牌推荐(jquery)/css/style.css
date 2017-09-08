@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.rightBar{
+    width: 400px;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    border: 1px solid #F6F6F6;
+    box-shadow: 1px 1px 5px #F9B8BE;
+}
+.header{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 3px solid #333;
+}
+
+.item{
+    width: 150px;
+    height: 100px;
+    border: 1px solid red;
+    float: left;
+    margin: 15px 20px;
+    overflow: hidden;
+    position: relative;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.word{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateX(180deg);
+    background-color: red;
+    line-height: 98px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.img1{
+    background: url("../img/11.jpg") no-repeat;
+    background-size: contain;
+}
+.img2{
+    background: url("../img/22.jpg") no-repeat;
+    background-size: contain;
+}
+.img3{
+    background: url("../img/33.jpg") no-repeat;
+    background-size: contain;
+}
+.img4{
+    background: url("../img/44.jpg") no-repeat;
+    background-size: contain;
+}
+.img5{
+    background: url("../img/55.jpg") no-repeat;
+    background-size: contain;
+}
+.img6{
+    background: url("../img/66.jpg") no-repeat;
+    background-size: contain;
+}
+.img7{
+    background: url("../img/77.jpg") no-repeat;
+    background-size: contain;
+}
+.img8{
+    background: url("../img/88.jpg") no-repeat;
+    background-size: contain;
+}

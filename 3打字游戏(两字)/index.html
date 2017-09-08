@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>打字</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #333;
+        }
+        .container{
+            width: 700px;
+            height: 400px;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+        .main{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 5px solid white;
+            float: left;
+            margin-right: 40px;
+            text-align: center;
+            line-height: 300px;
+            font-size: 100px;
+            font-weight: bold;
+            color: white;
+        }
+        .error{
+            color: red;
+            border: 5px solid red;
+        }
+
+        .score{
+            width: 500px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .score>p{
+            padding: 10px;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="score">
+    <p>正确次数： <span class="yes">0</span></p>
+    <p>错误次数： <span class="no">0</span></p>
+    <p>准确率： <span class="rate">0</span></p>
+</div>
+
+<div class="container">
+    <div class="main main1 animated">
+    </div>
+
+    <div class="main main2 animated">
+    </div>
+</div>
+
+
+
+<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>碰撞小球</title>
+     <style>
+     #box{
+          width: 1000px;
+          height: 800px;
+          position: relative;
+          border:1px solid red;
+          margin:50px auto 0;
+         }
+     #boll{
+          width: 50px;
+          height: 50px;
+        /*  border-radius: 25px;*/
+          border:1px solid green;
+          position: absolute;
+          top: 66px;
+          left: 88px;
+         }
+     </style>
+</head>
+<body>
+ <div id="box">
+      <div id="boll"></div>
+     </div>
+ <script>
+    var box=document.getElementById('box');
+    var boll=document.getElementById('boll');
+    var x=88,y=66,timer1=null,movex=1,movey=1;
+    console.log(box.clientWidth-boll.clientWidth);
+    console.log(box.clientWidth-boll.offsetWidth);
+    timer1=setInterval(function(){
+        if (movex) {//判断方向
+            x++;
+            if (x>=box.clientWidth-boll.clientWidth) {
+                movex=0;
+            }boll.style.left=x+'px';}
+        else{
+            x--;
+            if (x<=0) {
+                movex=1;
+            }boll.style.left=x+'px';
+        }
+        if (movey) {
+            y++;
+
+            if (y>=box.clientHeight-boll.clientHeight) {
+                movey=0;
+            }boll.style.top=y+'px';
+        }else{
+            y--;
+            if (y<=0) {
+                movey=1;
+            }boll.style.top=y+'px';
+        }
+    },1)
+</script>
+</body>
+</html>

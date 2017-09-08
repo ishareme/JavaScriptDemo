@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="main">
+    <div id="app">
+        <h1>嵌套路由</h1>
+        <div class="leftBox">
+            <ul>
+                <li><router-link to="/index">首页</router-link></li>
+                <li><router-link to="/about">关于</router-link></li>
+            </ul>
+        </div>
+        <div class="rightBox">
+            <router-view></router-view>
+        </div>
+    </div>
+</div>
+
+<script src="js/vue.js"></script>
+<script src="js/vue-router.js"></script>
+<script>
+    var indexR={
+        template:`<div>
+                <h1>首页</h1>
+                <p>这是首页内容</p>
+                <ul class="indexLI">
+                    <li><router-link to="/index/jinri">今日要闻</router-link></li>
+                    <li><router-link to="/index/tiyu">体育新闻</router-link></li>
+                </ul>
+                <div class="secondRouter">
+                    <router-view></router-view>
+                </div>
+            </div>`,
+    }
+    var aboutR={
+        template:`<div>
+                <h1>关于</h1>
+                <p>这是关于内容</p>
+            </div>`
+    }
+    var jinriR={
+        template:`<div>
+                    <ul class="indexSecondLI">
+                        <li>今日要闻1</li>
+                        <li>今日要闻2</li>
+                        <li>今日要闻3</li>
+                        <li>今日要闻4</li>
+                        <li>今日要闻5</li>
+                    </ul>
+            </div>`
+    }
+    var tiyuR={
+        template:`<div>
+                    <ul class="indexSecondLI">
+                        <li>体育新闻1</li>
+                        <li>体育新闻2</li>
+                        <li>体育新闻3</li>
+                        <li>体育新闻4</li>
+                        <li>体育新闻5</li>
+                    </ul>
+            </div>`
+    }
+
+    var route=new VueRouter({
+        routes:[
+            {
+                path:'/index',
+                component:indexR,
+                children:[
+                    {path:'jinri',component:jinriR},
+                    {path:'tiyu',component:tiyuR},
+                ]
+            },
+            {path:'/about',component:aboutR}
+        ]
+    })
+
+    var vm=new Vue({
+        el:'#app',
+        router:route,
+        methods:{
+            changeColor:function () {
+                console.log(this)
+            }
+        },
+        component:indexR
+    })
+</script>
+</body>
+</html>

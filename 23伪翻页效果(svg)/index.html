@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .main{
+            width: 200px;
+            height: 200px;
+            margin: 300px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        #svg1{
+            width: 200px;
+            height: 200px;
+            background-color: rgba(0,0,0,0.5);
+            position: absolute;
+            left: 0;
+            border: 0;
+            z-index: 1;
+        }
+        #svg2{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            /*border: 1px solid red;*/
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <!--<img src="./img/1.png" alt="" id="img">-->
+    <svg id="svg1">
+        <polygon points="100,20 30,180 100,110 138,110 170,180" stroke="white" fill="transparent" stroke-width="10" id="polygon1"></polygon>
+    </svg>
+    <svg id="svg2">
+        <polygon points="0,0 0,300 300,300 200,100" fill="#211a1b" id="polygon2"></polygon>
+    </svg>
+</div>
+
+<script src="js/snap.svg-min.js"></script>
+<script>
+    var mySvg1=document.getElementById('svg1')
+    var myP=document.getElementById('polygon2')
+    mySvg1.addEventListener('mouseover',function () {
+        var x=200
+        function doAnimate() {
+            var y=(-x)+300
+            var str='0,0 0,300 300,300 '+x+','+y
+            myP.setAttribute('points',str.toString())
+            x=x-2
+            if (x<=0){
+//                document.getElementById('img').dataset.index=x
+                x=200
+                myP.setAttribute('points',"0,0 0,300 300,300 200,100")
+                cancelAnimationFrame(leave)
+            }
+            var leave=requestAnimationFrame(doAnimate)
+        }
+        requestAnimationFrame(doAnimate)
+    })
+//    myImg.addEventListener('mouseout',function () {
+//        console.log(xx)
+//        function doAnimate() {
+//            xx=document.getElementById('img').dataset.index
+//            var y=(-xx)+300
+//            var str='0,0 0,300 300,300 '+x+','+y
+//            myP.setAttribute('points',str.toString())
+//            console.log(xx)
+//            xx=xx+2
+//            if (xx>=200){
+//                myP.setAttribute('points',"0,0 0,300 300,300 200,100")
+//                cancelAnimationFrame(leave)
+//            }
+//            var leave=requestAnimationFrame(doAnimate)
+//        }
+//        requestAnimationFrame(doAnimate)
+//    })
+</script>
+</body>
+</html>

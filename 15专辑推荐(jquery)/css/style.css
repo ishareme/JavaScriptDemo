@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.rightBar{
+    width: 200px;
+    position: absolute;
+    right: 100px;
+    top: 150px;
+    border: 1px solid red;
+    padding: 5px;
+}
+.header{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #52686A;
+    color: white;
+}
+.item{
+    width: 100%;
+    height: 160px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 5px #F2F7FF;
+    overflow: hidden;
+    position: relative;
+}
+.img{
+    width: 200%;
+    height: 100%;
+    /*margin-left: -100px;*/
+}
+.itemImg{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.itemOneImg1{
+    background: url("../img/1_1.jpg") no-repeat;
+    background-size: contain;
+    /*margin-left: -100px;*/
+}
+.itemOneImg2{
+    background: url("../img/1_2.jpg") no-repeat;
+    background-size: contain;
+}
+.itemTwoImg1{
+    background: url("../img/2_1.jpg") no-repeat;
+    background-size: contain;
+}
+.itemTwoImg2{
+    background: url("../img/2_2.jpg") no-repeat;
+    background-size: contain;
+}
+.itemThreeImg1{
+    background: url("../img/3_1.jpg") no-repeat;
+    background-size: contain;
+}
+.itemThreeImg2{
+    background: url("../img/3_2.jpg") no-repeat;
+    background-size: contain;
+}
+
+.word{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    color: white;
+    font-size: 14px;
+    text-indent: 5px;
+}
+.word1{
+    background-color: #B9D4F1;
+}
+.word2{
+    background-color: #CC085E;
+}
+.word3{
+    background-color: #10828C;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <h1>Vue待办事项</h1>
+    <todo-item v-for="item in list " v-bind:todo="item"></todo-item>
+    <br>
+    <input type="text" v-model="message" placeholder="请输入待办事项">
+    <button @click="addList">提交</button>
+</div>
+
+<script src="js/vue.js"></script>
+<script>
+    Vue.component('todo-item',{
+        props:['todo'],
+        template:'<li>{{todo.name}}</li>'
+    })
+    new Vue({
+        el:'#app',
+        data:{
+            message:'',
+            list:[
+                {name:'今天晚上七点开会'},
+                {name:'明天中午取快递'}
+            ]
+        },
+        methods:{
+            addList:function () {
+                this.list.push({name:this.message})
+                this.message=''
+            }
+        }
+    })
+</script>
+</body>
+</html>

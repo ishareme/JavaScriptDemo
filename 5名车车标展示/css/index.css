@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1260px;
+    height: 700px;
+    border: 2px solid red;
+    margin: 20px auto;
+}
+h1{
+    padding: 20px;
+    text-align: center;
+}
+.list{
+    width: 100%;
+    height: 600px;
+    margin: 50px;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: 3px solid antiquewhite;
+    margin: 15px;
+}
+.word{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 65px 0;
+}
+.word{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 65px 0;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    border: 3px solid darkcyan;
+    position: absolute;
+}
+.img1{
+background: url("../img/1.jpg") no-repeat;
+background-size: contain;
+    margin-left: 10px;
+}
+.img2{
+    background: url("../img/2.jpg") no-repeat;
+background-size: contain;
+}
+.img3{
+background: url("../img/3.jpg") no-repeat;
+background-size: contain;
+}
+.img4{
+background: url("../img/4.jpg") no-repeat;
+background-size: contain;
+}
+.img5{
+background: url("../img/5.jpg") no-repeat;
+background-size: contain;
+}
+.img6{
+background: url("../img/6.jpg") no-repeat;
+background-size: contain;
+}
+.img7{
+background: url("../img/7.jpg") no-repeat;
+background-size: contain;
+}
+.img8{
+background: url("../img/8.jpg") no-repeat;
+background-size: contain;
+}
+.img9{
+background: url("../img/9.jpg") no-repeat;
+background-size: contain;
+}
+.img10{
+background: url("../img/10.jpg") no-repeat;
+background-size: contain;
+}
+
+
+
+/*.box{*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*!*overflow: hidden;*!*/
+    /*float: left;*/
+    /*border: 3px solid antiquewhite;*/
+    /*margin: 15px;*/
+    /*position: relative;*/
+/*}*/
+/*.word{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*text-align: center;*/
+    /*padding: 65px 0;*/
+    /*!*float: left;*!*/
+/*}*/
+/*.img{*/
+    /*width: 125%;*/
+    /*height: 125%;*/
+    /*border: 5px solid coral;*/
+    /*!*float: left;*!*/
+    /*position: absolute;*/
+    /*!*top: -50px;*!*/
+    /*!*left: -50px;*!*/
+    /*z-index: 9999;*/
+/*}*/
+/*.img1{*/
+    /*background: url("../img/1.jpg") no-repeat;*/
+    /*background-size: contain;*/
+/*}*/
+/*.img2{*/
+    /*background: url() no-repeat;*/
+    /*background-size: contain;*/
+/*}*/
+/*.img3{*/
+    /*background: url("../img/3.jpg") no-repeat;*/
+    /*background-size: contain;*/
+/*}*/
+/*.img4{*/
+    /*background: url("../img/4.jpg") no-repeat;*/
+    /*background-size: contain;*/
+/*}*/
+/*.img5{*/
+    /*background: url("../img/5.jpg") no-repeat;*/
+    /*background-size: contain;*/
+/*}*/
+/*.img6{*/
+    /*background: url("../img/6.jpg") no-repeat;*/
+    /*background-size: contain;*/
+/*}*/
+/*.img7{*/
+    /*background: url("../img/7.jpg") no-repeat;*/
+    /*background-size: contain;*/
+/*}*/
+/*.img8{*/
+    /*background: url("../img/8.jpg") no-repeat;*/
+    /*background-size: contain;*/
+/*}*/
+/*.img9{*/
+    /*background: url("../img/9.jpg") no-repeat;*/
+    /*background-size: contain;*/
+/*}*/
+/*.img10{*/
+    /*background: url("../img/10.jpg") no-repeat;*/
+    /*background-size: contain;*/
+/*}*/
+
+
+
